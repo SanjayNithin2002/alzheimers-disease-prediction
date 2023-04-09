@@ -62,7 +62,26 @@ app.post("/predict", upload.single('imagefile'), (req, res)=>{
       PythonShell.run('shell.py', options)
       .then(messages=>{
         res.render('results', {
-            result : messages[messages.length-1]
+            imagePath : req.file.path,
+            data : [
+                {
+                "props" : messages[2],
+                "value" : messages[3]
+            },
+            {
+                "props" : messages[4],
+                "value" : messages[5]
+            },
+            {
+                "props" : messages[6],
+                "value" : messages[7]
+            },
+            {
+                "props" : messages[8],
+                "value" : messages[9]
+            }
+        ],
+        target : messages[10]
         })
       });
 });

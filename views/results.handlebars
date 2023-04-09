@@ -1,4 +1,24 @@
 <div class="container">
-  <div class="centered">{{result}}</div>
+  <div class="centered">
+    <img src="{{imagePath}}" height = "250" width="250">
+    <br/>
+    <br/>
+    <table  class="table table-dark table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Probability</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each data}}
+        <tr>
+          <td>{{this.props}}</td>
+          <td>{{this.value}}%</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <p>Most likely, it is of {{target}} Type.</p>
+  </div>
 </div>
-
