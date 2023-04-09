@@ -1,0 +1,31 @@
+{
+  "name": "alzheimers-disease-prediction",
+  "version": "1.0.0",
+  "description": "website for alzheimer detection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjayNithin2002/alzheimers-disease-prediction.git"
+  },
+  "author": "SanjayNithin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjayNithin2002/alzheimers-disease-prediction/issues"
+  },
+  "homepage": "https://github.com/SanjayNithin2002/alzheimers-disease-prediction#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "python-shell": "^5.0.0"
+  }
+}
