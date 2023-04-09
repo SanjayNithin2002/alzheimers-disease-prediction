@@ -59,7 +59,7 @@ app.post("/predict", upload.single('imagefile'), (req, res)=>{
     let options = {
         args: [req.file.path]
       };
-      PythonShell.run('model/shell.py', options)
+      PythonShell.run('shell.py', options)
       .then(messages=>{
         res.render('results', {
             result : messages[messages.length-1]
